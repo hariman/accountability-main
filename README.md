@@ -21,8 +21,8 @@ The format of the signed document obviously needs to be well defined. The idea i
 
 ## Link formats
 There also has to be a standard for going from a weblink to a Markdown/PDF version of the document. This is so links/QR codes behave in a consistent way, which is extra important for checking signatures in linked documents. Note that a document could exist in different versions, so there must be a way to either point to a specific version of a document or so that a base link to either the web or the accountability version shows the latest version of the document.
-Suggestion at the moment is the following page parameters: 
-a12y=true
+Suggestion at the moment is the following page parameters:  
+a12y=true  
 a12y-version=<version GUID>
 
 # Implementation
