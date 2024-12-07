@@ -16,7 +16,7 @@ The format of the signed document obviously needs to be well defined. The idea i
 
 ### Signed Markdown format
 - Markdown document with metadata that is not shown on a normal Markdown reader
-- Metadata is: "signed-metadata", i.e. metadata that is part of the signed payload but shown when just viewing the document. This is the signing certificate/chain and info from the authentication (display name, organisation etc); "signature", i.e. the signature value and a timestamp from the signature service.
+- Metadata is: "signed-metadata", i.e. metadata that is part of the signed payload but shown when just viewing the document. This is the signing certificate/chain and info from the authentication (display name, organisation etc, as well as the ticket/assertion from the authentication in b64 format); "signature", i.e. the signature value and a timestamp from the signature service.
 - Markdown signing signes all the Markdown content and also any embedded file (typically images) in the document. Will have to look at most efficient and sensible way of doing this, whether it's b64 encoding and signing all or whether each embedded item gets their own hash which is added. The idea is though that the embedded items are signed with the master document, since there is otherwise a risk that signed embedded items change independently of the master document.
 
 ## Link formats
